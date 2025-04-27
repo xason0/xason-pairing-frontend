@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>bmb pairing code</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <style>
+  @keyframes floatIn {
+  0% {
+    opacity: 0;
+    transform: translateY(30px) scale(0.95);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}  
+body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      background-color:#0a192f ; /* set the background image */
+      font-family: Arial, sans-serif;
+    }
+
+    .container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .box {
+      width: 300px;
+      height: 320px;
+      padding: 20px;
+      position: relative;
+      text-align: center;
+      background-color: #020c1b; /* set the background image */
+      border-radius: 10px;
+      transform: perspective(1000px) rotateY(0deg);
+      box-shadow: 20px 20px 20px #000000;
+      border: 2px solid #EF6C33 ;
+      position: relative;
+    }
+
+    #text {
+      color: #f6f5f5;
+    }
+
+    .input-container input {
+      color: #f1eaea;
+    }
+
+    .centered-text {
+      color: #e9e4e4;
+    }
+
+    .input-container {
+      display: flex;
+      background: rgb(10, 10, 10);
+      border-radius: 1rem;
+      background: black;
+      box-shadow: black;
+      padding: 0.3rem;
+      gap: 0.3rem;
+      max-width: 300px;
+      width: 100%;
+    }
+
+    .input-container input {
+      border-radius: 0.8rem 0 0 0.8rem;
+      background: #e8e8e8;
+      box-shadow: inset 13px 13px 10px #dcdcdc, inset -13px -13px 10px #f4f4f4;
+      width: 100%;
+      flex-basis: 75%;
+      padding: 1rem;
+      border: none;
+      font-weight: bold;
+      border-left: 2px solid #ecf2f8;
+      color: #0004ff;
+      transition: all 0.2s ease-in-out;
+    }
+
+    .input-container input:focus {
+      border-left: 2px solid #ecf1f6;
+      outline: none;
+      box-shadow: inset 13px 13px 10px #f0f2f3, inset -13px -13px 10px #f4f4f4;
+    }
+
+    .input-container button {
+      flex-basis: 15%;
+      padding: 1rem;
+      background: #075E54;
+      font-weight: 700;
+      letter-spacing: 0.3rem;
+      text-transform: uppercase;
+      color: white;
+      border: none;
+      width: 90%;
+      border-radius: 0 1rem 1rem 0;
+      transition: all 0.2s ease-in-out;
+    }
+
+    .input-container button:hover {
+      background:#EF6C33;
+    }
+
+    @media (max-width: 500px) {
+      .input-container {
+        flex-direction: column;
+      }
+
+      .input-container input {
+        border-radius: 0.8rem;
+      }
+
+      .input-container button {
+        padding: 0.4rem;
+        border-radius: 0.8rem;
+      }
+    }
+
+    .centered-text {
+      text-align: center;
+    }
+
+    @media (max-width: 500px) {
+      .box {
+        width: 90%; 
+      }
+    }
+
+    @media (max-width: 500px) {
+      .input-container input {
+        border-radius: 0.8rem;
+        width: 80%; 
+      }
+
+      .input-container button {
+        padding: 1rem;
+        border-radius: 0.9rem;
+        width: 100%; 
+      }
+    }
+  
+/* Rainbow background */
+@keyframes rainbow {
+  0%{background-position:0% 50%}
+  50%{background-position:100% 50%}
+  100%{background-position:0% 50%}
+}
+body {
+  margin: 0;
+  height: 100vh;
+  background: linear-gradient(-45deg, red, orange, yellow, green, blue, indigo, violet);
+  background-size: 400% 400%;
+  animation: rainbow 15s ease infinite;
+  font-family: Arial, sans-serif;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+/* Logo */
+.logo {
+  width: 100px;
+  height: 100px;
+  margin: 20px auto 10px;
+  border-radius: 50%;
+  display: block;
+  border: 3px solid white;
+}
+
+/* Header text */
+.powered-by {
+  font-size: 1.5rem;
+  font-weight: bold;
+  background: linear-gradient(90deg, #ff00cc, #3333ff, #00ffcc);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: pulse 2s infinite;
+}
+
+.subtitle {
+  font-size: 1rem;
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+/* Central dark box */
+.box {
+  width: 90%;
+  max-width: 400px;
+  padding: 25px;
+  background: linear-gradient(135deg, #000428, #004e92);
+  border-radius: 12px;
+  box-shadow: 0px 0px 25px #000;
+  border: 2px solid #00ffcc;
+  text-align: center;
+}
+
+.box h3 {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #ffffff;
+  text-shadow: 0 0 8px #00ffcc;
+  letter-spacing: 1px;
+  margin-top: 10px;
+}
+
+.box h6 {
+  font-size: 1rem;
+  color: #dddddd;
+  font-style: italic;
+  margin: 10px 0;
+}
+
+.box p {
+  font-size: 1rem;
+  font-weight: bold;
+  color: #ff4b2b;
+  margin-top: 10px;
+}
+
+/* Input styles */
+.input-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 15px;
+}
+
+.input-container input {
+  width: 70%;
+  padding: 12px;
+  border: none;
+  border-radius: 6px 0 0 6px;
+  font-size: 1rem;
+  outline: none;
+}
+
+.input-container button {
+  padding: 12px;
+  border: none;
+  border-radius: 0 6px 6px 0;
+  background: #00ff99;
+  color: black;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* Music button */
+.music-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #00ffcc;
+  color: black;
+  font-weight: bold;
+  border: none;
+  border-radius: 30px;
+  padding: 10px 20px;
+  cursor: pointer;
+  animation: bounce 1.5s infinite;
+}
+
+/* Bounce animation */
+@keyframes bounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-6px); }
+}
+
+/* Footer acknowledgment */
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.4);
+  padding: 10px;
+  font-size: 0.85rem;
+  color: #00ffcc;
+}
+footer span {
+  display: inline-block;
+  margin: 0 10px;
+  font-weight: bold;
+}
+
+</style>
+</head>
+<body>
+  <div class="container">
+    
+<img src="https://files.catbox.moe/uhnroz.jpeg" alt="Logo" class="logo">
+<div class="powered-by">Powered by Manasseh Amoako</div>
+<div class="subtitle">Welcome to the future of WhatsApp Bots...</div>
+<audio id="bgMusic" src="https://files.catbox.moe/e5okau.m4a"></audio>
+<button class="music-button" onclick="document.getElementById('bgMusic').play()">Play Music</button>
+<footer>
+  <span>Mr. Thomas Boadu Appiah (Our lovely)</span>
+  <span>Gloria Kusi (My best Mother)</span>
+  <span>Sahil Khan</span>
+  <span>Big Sly</span>
+  <span>Savage</span>
+  <span>Polo</span>
+</footer>
+
+<div class="main">
+      <div class="box" id="box">
+        <div id="text">
+          <i class="fa fa-user"></i>
+          <p>
+            <h3 class="centered-text">XASON XTAR SESSION SCANNER</h3>
+            <br>
+            <h6 style="font-family: sans-serif; font-weight: bold;line-height: 2rem;">CREATED AND MADE BY MANASSEH</h6>
+            <h6 style=" color: #EF6C33;">Enter without Country Code.</h6>
+            <div class="input-container">
+              <input placeholder="44XXXXXXXXX" type="text" id="number"  name="">
+              <button id="submit">create</button>
+            </div>
+            
+            <a id="waiting-message" class="centered-text" style="display: none;">Ngoja kiasi tunacreate session ID</a>
+            <br>
+            <br>
+            <main id="pair"></main>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.0.0-alpha.1/axios.min.js"></script>
+  <script>
+    let a = document.getElementById("pair");
+    let b = document.getElementById("submit");
+    let c = document.getElementById("number");
+    let box = document.getElementById("box");
+
+    async function Copy() {
+      let text = document.getElementById("copy").innerText;
+      let obj = document.getElementById("copy");
+      await navigator.clipboard.writeText(obj.innerText.replace('CODE: ', ''));
+      obj.innerText = "COPIED";
+      obj.style = "color:Blue;font-weight:bold";
+      obj.size = "5";
+      setTimeout(() => {
+        obj.innerText = text;
+        obj.style = "color:white;font-weight-bold";
+        obj.size = "5";
+      }, 500);
+    }
+
+    b.addEventListener("click", async (e) => {
+      e.preventDefault();
+      if (!c.value) {
+        a.innerHTML = '<a style="color:lawngreen;font-weight:bold">Field blank</a><br><br>';
+      } else if (c.value.replace(/[^0-9]/g, "").length < 11) {
+        a.innerHTML = '<a style="color:lawngreen;font-weight:bold">Invalid Phone Number</a><br><br>';
+      } else {
+        const France_King = c.value.replace(/[^0-9]/g, "");
+        let bb = "";
+        let bbc = "";
+        const cc = France_King.split('');
+        cc.map(a => {
+          bbc += a;
+          if (bbc.length == 3) {
+            bb += " " + a;
+          } else if (bbc.length == 8) {
+            bb += " " + a;
+          } else {
+            bb += a;
+          }
+        });
+        c.type = "text";
+        c.value = "+" + bb;
+        c.style = "color:Blue;font-size:20px";
+        a.innerHTML = '<a style="color:lawngreen;font-weight:bold">Generating pairing code...</a><br><br>';
+        let { data } = await axios(`/code?number=${France_King}`);
+        let code = data.code || "Service Unavailable";
+        a.innerHTML = '<font id="copy" onclick="Copy()" style="color:yellow;font-weight:bold" size="3">PAIRING CODE: <span style="color:white;font-weight:bold">' + code + '</span></font><br><br><br>';
+      }
+    });
+  </script>
+</body>
+</html>
